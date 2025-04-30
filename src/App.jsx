@@ -9,6 +9,7 @@ import Dashboardhome from './layout/dashboardhome'
 import ProductView from './layout/productView'
 import AllusersView from './layout/allusersView'
 import OrderManageView from './layout/orderManageView'
+import UserOrderView from './layout/dashboard/UserOrderView'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           <Route path='/dashboard/seller/my-products' element={<ProductView />}/>
           <Route path='/dashboard/admin/manage-users' element={<AllusersView />}/>
           <Route path='/dashboard/seller/manage-orders' element={<OrderManageView/>} />
+          <Route path='/dashboard/customer/manage-my-order' element={<UserOrderView/>} />
         </Routes>
       </Router>
     </>

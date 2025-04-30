@@ -76,7 +76,7 @@ const Dashboardhome = () => {
         });
     }, []);
 
-    //total recieived orders count
+    //total received orders count
     React.useEffect(() => {
         const fetchOrders = async () => {
             const response = await fetch(`http://localhost:3000/api/orders/get-my-order-count/${userId}`, {
@@ -114,10 +114,10 @@ const Dashboardhome = () => {
         });
     }, [userId, token]);
 
-    //to self made order by customer
+    //total count of self made order by customer
     React.useEffect(() => {
         const fetchOrders = async () => {
-            const response = await fetch(`http://localhost:3000/api/orders/get-self-orders/${userId}`, {
+            const response = await fetch(`http://localhost:3000/api/orders/get-self-orders-count/${userId}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -132,6 +132,7 @@ const Dashboardhome = () => {
             console.error('Error while fetching:', error);
         });
     }, [userId, token]);
+
 
 
   return (

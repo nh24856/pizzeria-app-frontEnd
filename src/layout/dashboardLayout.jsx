@@ -88,9 +88,9 @@ const DashboardLayout = ({ children }) => {
                 )}
                 {userRole === 'customer' && (
                 <li>
-                    <a href="#" className="flex items-center p-2 text-black rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white group">
+                    <Link to="/dashboard/customer/manage-my-order" className="flex items-center p-2 text-black rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white group">
                         <span className="ml-3">My Orders</span>
-                    </a>
+                    </Link>
                 </li>
                 )}
                 {(userRole === 'customer' || userRole === 'Seller' || userRole === 'Admin' || userRole === 'SuperUser') && (
