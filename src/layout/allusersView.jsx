@@ -6,7 +6,6 @@ const AllusersView = () => {
     // by using useEffect to fetch data from the server
     React.useEffect(() => {
         const fetchProducts = async () => {
-            localStorage.getItem('token');
             const token = (localStorage.getItem('token'));
             const response = await fetch('http://localhost:3000/api/users/superuser/all-users', {
             Headers: {
